@@ -19,11 +19,11 @@ This project visualizes various sorting algorithms using a graphical user interf
 2. Navigate to the project directory.
 3. Compile the Java files: 
 
-javac *.java
+`javac *.java`
 
 4. Run the `SortingFrame` class:
 
-java SortingFrame
+`java SortingFrame`
 
 
 ## Usage

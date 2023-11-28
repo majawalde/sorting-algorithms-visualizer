@@ -14,7 +14,6 @@ public class BubbleSort implements SortingAlgorithm {
                     try {
                         final int finalCurrentIndex = currentIndex;
                         final int finalSortedIndex = array.length - sortedIndex - 1;
-                        // Adjusting the setArray call to provide both indices being compared
                         SwingUtilities.invokeLater(() -> panel.setArray(array, finalCurrentIndex, finalCurrentIndex + 1, finalSortedIndex));
                         Thread.sleep(speed);
                     } catch (InterruptedException e) {
@@ -23,7 +22,6 @@ public class BubbleSort implements SortingAlgorithm {
                 }
             }
         }
-        // Clear highlighting and mark the whole array as sorted
         panel.setArray(array, -1, -1, array.length - 1);
     }
 

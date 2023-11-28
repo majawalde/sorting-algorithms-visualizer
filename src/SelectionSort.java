@@ -23,7 +23,6 @@ public class SelectionSort implements SortingAlgorithm {
                 Thread.currentThread().interrupt();
             }
         }
-        // Clear highlighting and mark the whole array as sorted
         panel.setArray(array, -1, -1, array.length - 1);
     }
 }

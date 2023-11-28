@@ -5,7 +5,7 @@ public class MergeSort implements SortingAlgorithm {
     @Override
     public void sort(int[] array, SortingPanel panel, int speed) {
         mergeSort(array, 0, array.length - 1, panel, speed);
-        // Clear highlighting and mark whole array as sorted
+
         panel.setArray(array, -1, -1, array.length - 1);
     }
 
@@ -38,7 +38,7 @@ public class MergeSort implements SortingAlgorithm {
                         ? ((leftArray[leftIndex] <= rightArray[rightIndex])
                         ? left + leftIndex
                         : middle + 1 + rightIndex)
-                        : -1; // Use -1 when there is no comparison
+                        : -1; //
                 SwingUtilities.invokeLater(() -> panel.setArray(array, finalCurrentIndex, compareIndex, right));
                 Thread.sleep(speed);
             } catch (InterruptedException e) {

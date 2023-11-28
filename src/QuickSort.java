@@ -5,7 +5,7 @@ public class QuickSort implements SortingAlgorithm {
     @Override
     public void sort(int[] array, SortingPanel panel, int speed) {
         quickSort(array, 0, array.length - 1, panel, speed);
-        // Clear highlighting and mark whole array as sorted
+
         panel.setArray(array, -1, -1, array.length - 1);
     }
 
